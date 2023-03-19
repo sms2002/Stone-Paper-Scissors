@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="winContainer">
+        <img class="starImage" src="assets/Group 5 (1).png" alt="star">
+        <img class="cupImage" src="assets/Vector (3).png" alt="star">
+    </div>
+    <h1 class="winHead">HURRAY!!</h1>
+    <p class="winPara">YOU WON THE GAME</p>
+    <button onClick="goback()"class="winplayAgain">PLAY AGAIN</button>
+    <div id="rule" style="display: none;" class="rules">
+        <h1 class="ruleHeader">Game Rules</h1>
+        <ul class="bullets">
+            <li>Rock beats scissors, scissors beat <br/>paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll<br/> count off “rock, paper, scissors,<br/> shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle<br/> minor decisions or simply play to<br/> pass the time</li>
+            <li>If both players lay down the same<br/> hand, each player lays down another<br/> hand</li>
+        </ul>
+        <button id="closeButton" class="close">X</button>
+    </div>
+    <button id="ruleButton" class="button"style="background-color: #8CC461;">RULES</button>
+    <script src="./index.js"></script>
+</body>
+</html>

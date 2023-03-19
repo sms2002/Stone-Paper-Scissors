@@ -1,0 +1,490 @@
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #8cc461;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: white;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+.headerText {
+  color: white;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.boxes {
+  display: flex;
+}
+.box1 {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 8rem;
+  text-align: center;
+}
+.compScore {
+  color: #656565;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.yourScore {
+  color: #656565;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.compCount {
+  font-size: 3rem;
+}
+.yourCount {
+  font-size: 3rem;
+}
+.box2 {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 8rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #0074b6;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  left: 35rem;
+  top: 17rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #bd00ff;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  left: 55rem;
+  top: 17rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.circle3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #ffa943;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  left: 45rem;
+  top: 30rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.line1 {
+  border: 10px solid #000000a3;
+  width: 12rem;
+  position: fixed;
+  top: 20.3rem;
+  left: 42rem;
+}
+.line2 {
+  border: 10px solid #000000a3;
+  width: 12rem;
+  position: fixed;
+  top: 25.3rem;
+  left: 36.5rem;
+  transform: rotate(60deg);
+}
+.line3 {
+  border: 10px solid #000000a3;
+  width: 12rem;
+  position: fixed;
+  top: 25.3rem;
+  left: 48.5rem;
+  transform: rotate(120deg);
+}
+.button {
+  background-color: #8cc461;
+  color: white;
+  border-radius: 0.5rem;
+  border-color: white;
+  border-style: solid;
+  width: 119px;
+  height: 40px;
+  position: absolute;
+  left: 78rem;
+  top: 40rem;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.rules {
+  background-color: #004429;
+  color: white;
+  width: 20rem;
+  box-sizing: border-box;
+  margin-left: 5rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.4rem;
+  position: absolute;
+  top: 17rem;
+  left: 65rem;
+}
+.ruleHeader {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+ul {
+  list-style-type: none;
+  font-weight: 400;
+}
+li {
+  margin: 10px 0; /* adds space between each list item */
+}
+
+.bullets li::before {
+  content: "\25A0"; /* add the bullet point symbol */
+  color: #ffd600; /* set the color to red */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.close {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: red;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  left: 17rem;
+  top: -2rem;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  font-family: "Dangrek", cursive;
+}
+.circle4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #0074b6;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+
+  cursor: pointer;
+  z-index: 1;
+}
+.circle5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #bd00ff;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+
+  cursor: pointer;
+  z-index: 1;
+}
+.circle6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #ffa943;
+  border-style: solid;
+  border-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+
+  cursor: pointer;
+  z-index: 1;
+}
+.dup {
+  left: 55rem;
+  top: 20rem;
+}
+
+.dup1 {
+  left: 25rem;
+  top: 20rem;
+}
+
+.circleContainer1 {
+  position: fixed;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: rgba(46, 154, 37, 0.39);
+  top: 16.5rem;
+  left: 21.7rem;
+  display: flex;
+  justify-content: center;
+}
+.subContainer1 {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: rgba(29, 168, 43, 0.79);
+  top: 1.6rem;
+  left: 1.4rem;
+}
+.subContainer12 {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: #3B6720;
+    opacity: 20%;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .circleContainer2 {
+    position: fixed;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: rgba(46, 154, 37, 0.39);
+    top: 16.5rem;
+    left: 51.7rem;
+    display: flex;
+    justify-content: center;
+  }
+  .subContainer21 {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: rgba(29, 168, 43, 0.79);
+    top: 1.6rem;
+    left:1.4rem;
+  }
+  .subContainer22 {
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background: #3B6720;
+      opacity: 20%;
+      top: 1rem;
+      left: 1rem;
+    }
+    .dynamicwinlose
+    {
+        color: white;
+        position: absolute;
+        left: 38.6rem;
+        top: 18.5rem;
+        text-align: center;
+    }
+    .youHead
+    {
+        position: absolute;
+        color: white;
+        left:25rem;
+        top:17.5rem;
+        font-weight: 400;
+        z-index: 1;
+    }
+    .pcHead
+    {
+        position: absolute;
+        color: white;
+        left:55.5rem;
+        top:17.5rem;
+        font-weight: 400;
+        z-index: 1;
+    }
+    .playAgain
+    {
+        position: absolute;
+        width: 8rem;
+        height: 2.5rem;
+        color: #6B6B6B;
+        left:40.2rem;
+        top:25.5rem;
+        border-radius: 0.3rem;
+        border-color: white;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .button2
+    {
+        background-color: #8cc461;
+        color: white;
+        border-radius: 0.5rem;
+        border-color: white;
+        border-style: solid;
+        width: 119px;
+        height: 40px;
+        position: absolute;
+        left: 87rem;
+        top: 40rem;
+        text-align: center;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .button3
+    {
+        background-color: #8cc461;
+        color: white;
+        border-radius: 0.5rem;
+        border-color: white;
+        border-style: solid;
+        width: 119px;
+        height: 40px;
+        position: absolute;
+        left:2rem ;
+        top: 40rem;
+        text-align: center;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .starImage
+    {
+        position: absolute;
+        left: 30rem;
+        top:5rem
+    }
+    .cupImage
+    {
+        position: absolute;
+        left: 40rem;
+        top:12rem
+    }
+    .winHead
+    {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        top: 27rem;
+        left: 35rem;
+        color: white;
+        font-size: 5rem;
+    }
+    .winPara
+    {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        top: 33rem;
+        left: 35rem;
+        color: white;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    .winplayAgain
+    {
+        position: absolute;
+        text-align: center;
+        top: 39rem;
+        left: 42rem;
+        color: #6B6B6B;
+        width: 8.4rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        border-color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .changeimgmain
+    {
+      position: relative;
+      top:1rem;
+      left: 0.5rem;
+    }
+    .changeimgmain1
+    {
+      position: relative;
+      top:1rem;
+      left: 1.7rem;
+    }
+    .changeimgmain2
+    {
+      position: relative;
+      top:1rem;
+      left: 1rem;
+    }
+    .changeImg1
+    {
+      position: relative;
+      top:1rem;
+      left: 0.5rem;
+    }
+    .changeImg2
+    {
+      position: relative;
+      top:1.2rem;
+      left: 1.7rem;
+    }
+    .changeImg3
+    {
+      position: relative;
+      top:0.8rem;
+      left: 0.9rem;
+    }
+    .makeitsmall
+    {
+      font-weight: 400;
+    }

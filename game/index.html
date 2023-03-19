@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="headerContainer">
+      <div class="headerText">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class="boxes">
+        <div class="box1">
+            <h3 class="compScore">COMPUTER<br/>SCORE</h3>
+            <h1 id="computerScore"class="compCount">0</h1>
+        </div>
+        <div class="box2">
+            <h3 class="yourScore">YOUR <br/>SCORE</h3>
+            <h1 id="yourscorecount" class="yourCount">0</h1>
+        </div>
+      </div>
+    </div>
+    <div class="bodyContent">
+      <div id="init"style="display:block"class="initiaContainer">
+        <div id="stone1" class="circle1">
+            <img class="changeImg"src="assets/stone.png" alt="stone">
+        </div>
+        <div id="scissors1"class="circle2">
+            <img class="changeImg" src="assets/scissors.png" alt="scissors">
+        </div>
+        <div id="paper1" class="circle3">
+            <img class="changeImg" src="assets/paper.png" alt="paper">
+        </div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+        <div id="mainCont" style="display: none;" class="mainContainer">
+          <div id="circleContainer1" style="display: none;" class="circleContainer1">
+            <div class="subContainer1"><div class="subContainer12"></div></div>
+        </div>
+        <h2 class="youHead">YOU PICKED</h2>
+        <h2 class="pcHead">PC PICKED</h2>
+        <div id="stone2" style="display: none;" class="circle4 dup1">
+            <img class="changeimgmain" src="assets/stone.png" alt="stone">
+        </div>
+        <div  id="scissors2"  style="display: none;"class="circle5 dup1">
+            <img class="changeimgmain1" src="assets/scissors.png" alt="scissors">
+        </div>
+        <div id="paper2"  style="display: none;" class="circle6 dup1">
+            <img class="changeimgmain2" src="assets/paper.png" alt="paper">
+        </div>
+        
+        <div id="circleContainer2" style="display: none;" class="circleContainer2">
+            <div class="subContainer21"><div class="subContainer22"></div></div></div>
+        <div id="stone3"class="circle4 dup">
+            <img class="changeImg1"  src="assets/stone.png" alt="stone">
+        </div>
+        <div id="scissors3" class="circle5 dup">
+            <img class="changeImg2" src="assets/scissors.png" alt="scissors">
+        </div>
+        <div id="paper3" class="circle6 dup">
+            <img class="changeImg3" src="assets/paper.png" alt="paper">
+        </div>
+        <h1 id="dynamicwinlose"class="dynamicwinlose"><div id="changeableText">YOU</div><div class="makeitsmall"id="changeonTie">AGAINST PC</div></h1>
+        <button id="playagain" style="display: none;" class="playAgain">PLAY AGAIN</button>
+        <button id="replay" style="display: none;" class="playAgain">REPLAY</button>
+        </div>
+    </div>
+    <div id="rule" style="display: none;" class="rules">
+        <h1 class="ruleHeader">Game Rules</h1>
+        <ul class="bullets">
+            <li>Rock beats scissors, scissors beat <br/>paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll<br/> count off “rock, paper, scissors,<br/> shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle<br/> minor decisions or simply play to<br/> pass the time</li>
+            <li>If both players lay down the same<br/> hand, each player lays down another<br/> hand</li>
+        </ul>
+        <button id="closeButton" class="close">X</button>
+    </div>
+    <button id="ruleButton" class="button"style="background-color: #8CC461;">RULES</button>
+    <button onClick="gonext()"id="nextButton" style="display: none;" class="button2"style="background-color: #8CC461;">NEXT</button>
+    <button onClick="clearScore()"id="clearButton"  class="button3"style="background-color: #8CC461;">RESET</button>
+    <script src="./index.js"></script>
+  </body>
+</html>
